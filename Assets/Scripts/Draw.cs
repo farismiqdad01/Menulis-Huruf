@@ -71,6 +71,9 @@ public class Draw : MonoBehaviour
         if (currentLineObject != null)
         {
             currentLineObject.transform.parent = GameObject.Find("Lines").transform;
+            currentLineObject = null;
+            currentLineRenderer = null;
+            edgeCollider = null;
         }
     }
 
